@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Mahasiswa</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Container untuk menampung 3 kartu secara berdampingan */
+        .profile-container {
+            display: flex;
+            gap: 25px;
+            max-width: 1300px;
+            width: 100%;
+            justify-content: center;
+            align-items: stretch;
+            flex-wrap: wrap; /* Agar otomatis turun ke bawah di layar kecil */
+        }
+
+        .card {
+            background: #fff0f3;
+            flex: 1 1 360px; /* Fleksibel, lebar minimal ~360px per kartu */
+            max-width: 420px;
+            padding: 30px 25px;
+            border-radius: 30px;
+            box-shadow: 0 20px 45px rgba(233, 30, 99, 0.12);
+            text-align: center;
+            border: 2px solid #ffccd5;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-header img {
+            width: 130px;
+            height: 130px;
+            border-radius: 20px;
+            object-fit: cover;
+            border: 4px solid #ffb7b2;
+            margin-bottom: 15px;
+            box-shadow: 0 8px 20px rgba(255, 183, 178, 0.4);
+        }
+
+        .card h1 {
+            font-size: 22px;
+            color: #222222;
+            margin-bottom: 6px;
+        }
+
+        .card .role {
+            font-size: 14px;
+            color: #666666;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .info-box {
+            background: #fff9fa;
+            padding: 18px 16px;
+            border-radius: 20px;
+            border: 1px solid #ffccd5;
+            display: grid;
+            grid-template-columns: 110px auto 1fr;
+            row-gap: 10px;
+            align-items: center;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #444444;
+        }
+
+        .info-colon {
+            font-weight: 600;
+            color: #444444;
+            padding-right: 8px;
+        }
+
+        .info-value {
+            color: #222222;
+            font-weight: 500;
+            word-break: break-word; /* Mencegah email panjang merusak layout */
+        }
+
+        .color-badge {
+            display: inline-block;
+            background: #222222;
+            color: #ffb7b2;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+
+        <!-- KARTU PROFIL 1 -->
+        <div class="card">
+            <div class="card-header">
+                <img src="raaww.jpeg" alt="Foto Profil Thiara">
+                <h1>Thiara Thaulanie Marta</h1>
+                <div class="role">Mahasiswa Universitas Pembangunan Jaya</div>
+            </div>
+
+            <div class="info-box">
+                <span class="info-label">Jurusan</span>
+                <span class="info-colon">:</span>
+                <span class="info-value">Sistem Informasi</span>
+
+                <span class="info-label">NIM</span>
+                <span class="info-colon">:</span>
+                <span class="info-value">2025081057</span>
+
+                <span class="info-label">Email</span>
+                <span class="info-colon">:</span>
+                <span class="info-value">thiarathlnm@gmail.com</span>
+
+                <span class="info-label">Peran</span>
+                <span class="info-colon">:</span>
+                <span class="info-value">Anggota</span>
+
+                <span class="info-label">Gol. Darah</span>
+                <span class="info-colon">:</span>
+                <span class="info-value">O</span>
+
+                <span class="info-label">Warna Suka</span>
+                <span class="info-colon">:</span>
+                <span class="info-value">
+                    <span class="color-badge">Pink &amp; Hitam</span>
+                </span>
+            </div>
+        </div>
+
+        <!-- KARTU PROFIL 2 -->
+        <div class="card">
+            <div class="card-header">
+                <img src="profil2.jpeg" alt="Foto Profil 2">
+                <h1>Nama Anggota 2</h1>
+                <div class="role">Mahasiswa Universitas Pembangunan Jaya</div>
+            </div>
+
+            <div class="info-box">
+                <span class="info-label">Jurusan</span>
+                <span class="info-colon">:</span>
+                <span class="info-value">Sistem Informasi</span>
+
+                <span class="info-label">NIM</span>
+                <span class="info-colon">:</span>
+                <span class="info-value">2025081058</span>
+
+                <span class="info-label">Email</span>
+                <span class="info-colon">:</span>
+                <span class="info-value">anggota2@gmail.com</span>
+
+                <span class="info-label">Peran</span>
+                <span class="info-colon">:</span>
+                <span class="info-value">Anggota</span>
+
+                <span class="info-label">Gol. Darah</span>
+                <span class="info-colon">:</span>
+                <span class="info-value">A</span>
+
+                <span class="info-label">Warna Suka</span>
+                <span class="info-colon">:</span>
+                <span class="info-value">
+                    <span class="color-badge">Biru &amp; Putih</span>
+                </span>
+            </div>
+        </div>
+
+        <!-- KARTU PROFIL 3 -->
+        <div class="card">
+            <div class="card-header">
+                <img src="profil3.jpeg" alt="Foto Profil 3">
+                <h1>Nama Anggota 3</h1>
+                <div class="role">Mahasiswa Universitas Pembangunan Jaya</div>
+            </div>
+
+            <div class="info-box">
+                <span class="info-label">Jurusan</span>
+                <span class="info-colon">:</span>
+                <span class="info-value">Sistem Informasi</span>
+
+                <span class="info-label">NIM</span>
+                <span class="info-colon">:</span>
+                <span class="info-value">2025081059</span>
+
+                <span class="info-label">Email</span>
+                <span class="info-colon">:</span>
+                <span class="info-value">anggota3@gmail.com</span>
+
+                <span class="info-label">Peran</span>
+                <span class="info-colon">:</span>
+                <span class="info-value">Ketua</span>
+
+                <span class="info-label">Gol. Darah</span>
+                <span class="info-colon">:</span>
+                <span class="info-value">B</span>
+
+                <span class="info-label">Warna Suka</span>
+                <span class="info-colon">:</span>
+                <span class="info-value">
+                    <span class="color-badge">Hijau &amp; Abu</span>
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
